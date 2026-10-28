@@ -1374,3 +1374,6 @@ const QUESTIONS = [
 
 // The Week 12 mock quiz section = the official practice exam / mock quiz questions + mock-style questions.
 const isMock = q => !!q.src && /Practice exam|mock quiz|Mock-style/i.test(q.src);
+
+// In-depth explanations are added by explanations-*.js as [question prefix, deep text, [note per option in written order]].
+const DEEP = [];
