@@ -16,3 +16,5 @@ Questions live in `questions.js`, in-depth explanations in `explanations-*.js`, 
 ```
 node build-md.js
 ```
+
+This also bumps the `?v=` version on the links in `index.html`, so browsers load the new files instead of cached ones.

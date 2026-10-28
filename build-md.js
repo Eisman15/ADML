@@ -63,4 +63,9 @@ for (const note of NOTES) {
 }
 fs.writeFileSync(path.join(__dirname, "NOTES.md"), notes.join("\n"));
 
+// Bump the ?v= cache-busting version in index.html so browsers fetch the new files.
+const stamp = new Date().toISOString().replace(/\D/g, "").slice(0, 12);
+const indexPath = path.join(__dirname, "index.html");
+fs.writeFileSync(indexPath, fs.readFileSync(indexPath, "utf8").replace(/\?v=\d+"/g, `?v=${stamp}"`));
+
 console.log(`Wrote QUESTIONS.md (${n} questions, ${used.size} in-depth explanations) and NOTES.md (${NOTES.length} weeks)`);

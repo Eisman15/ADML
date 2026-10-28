@@ -1,4 +1,5 @@
 // In-depth explanations, weeks 1-4. Format: [question text prefix, deep explanation, [note for each option in written order]]
+var DEEP = typeof DEEP !== "undefined" ? DEEP : [];
 DEEP.push(
   // ---------- WEEK 1 ----------
   ["How is machine learning (ML) related",

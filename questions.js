@@ -1376,4 +1376,4 @@ const QUESTIONS = [
 const isMock = q => !!q.src && /Practice exam|mock quiz|Mock-style/i.test(q.src);
 
 // In-depth explanations are added by explanations-*.js as [question prefix, deep text, [note per option in written order]].
-const DEEP = [];
+var DEEP = typeof DEEP !== "undefined" ? DEEP : [];

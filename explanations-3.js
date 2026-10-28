@@ -1,4 +1,5 @@
 // In-depth explanations, weeks 9-12. Format: [question text prefix, deep explanation, [note for each option in written order]]
+var DEEP = typeof DEEP !== "undefined" ? DEEP : [];
 DEEP.push(
   // ---------- WEEK 9 ----------
   ["Considering a D-dimensional multivariate",

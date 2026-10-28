@@ -1,4 +1,5 @@
 // In-depth explanations, weeks 5-8. Format: [question text prefix, deep explanation, [note for each option in written order]]
+var DEEP = typeof DEEP !== "undefined" ? DEEP : [];
 DEEP.push(
   // ---------- WEEK 5 ----------
   ["In a medical diagnosis task",

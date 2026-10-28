@@ -54,7 +54,7 @@
   // Attach each in-depth explanation to its question (longest matching question prefix wins).
   QUESTIONS.forEach(q => {
     let best = null;
-    for (const d of DEEP) if (q.q.startsWith(d[0]) && (!best || d[0].length > best[0].length)) best = d;
+    for (const d of (typeof DEEP !== "undefined" ? DEEP : [])) if (q.q.startsWith(d[0]) && (!best || d[0].length > best[0].length)) best = d;
     if (best) q.deep = { text: best[1], notes: best[2] };
   });
 
@@ -212,12 +212,12 @@
 
   function renderNotes(card) {
     const w = Number(state.noteWeek);
-    const note = NOTES.find(n => n.w === w);
+    const note = typeof NOTES !== "undefined" ? NOTES.find(n => n.w === w) : null;
     const count = QUESTIONS.filter(q => q.w === w).length;
     card.append(
       el("div", { class: "meta" }, el("span", { class: "badge" }, `Week ${w}`)),
       el("h2", { class: "chapter" }, WEEKS[w]),
-      el("div", { class: "notes", html: note ? renderMd(note.md) : "<p>No notes yet.</p>" }),
+      el("div", { class: "notes", html: note ? renderMd(note.md) : "<p>The notes didn't load. Refresh the page (Ctrl+F5, or pull down to refresh on mobile).</p>" }),
       el("div", { class: "actions notes-actions" },
         el("button", { class: "btn ghost", disabled: w === 1, onclick: () => { state.noteWeek = w - 1; store.set("noteWeek", w - 1); render(); window.scrollTo(0, 0); } }, "← Prev"),
         el("button", { class: "btn", onclick: () => { state.week = String(w); store.set("week", state.week); setMode("week"); } }, `Practise Week ${w} (${count})`),
