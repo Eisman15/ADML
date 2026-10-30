@@ -37,7 +37,7 @@ function block(q, n) {
 const out = [];
 out.push("# ADML Exam Practice: Question Bank", "");
 out.push(`${QUESTIONS.length} multiple choice questions generated from the ADML lectures (weeks 1–12), using the weekly review questions and the practice exam / Week 12 mock quiz as a guide. Every answer has an in-depth explanation.`, "");
-out.push("Interactive version: https://eisman15.github.io/ifn680-exam-practice/ · Study notes: [NOTES.md](NOTES.md)", "");
+out.push("Interactive version: https://eisman15.github.io/ADML/ · Study notes: [NOTES.md](NOTES.md)", "");
 out.push("## Contents", "", "- [Week 12 Mock Quiz](#week-12-mock-quiz)");
 for (const w of Object.keys(WEEKS)) out.push(`- [Week ${w}: ${WEEKS[w]}](#week-${w})`);
 out.push("");

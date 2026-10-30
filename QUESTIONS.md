@@ -2,7 +2,7 @@
 
 243 multiple choice questions generated from the ADML lectures (weeks 1–12), using the weekly review questions and the practice exam / Week 12 mock quiz as a guide. Every answer has an in-depth explanation.
 
-Interactive version: https://eisman15.github.io/ifn680-exam-practice/ · Study notes: [NOTES.md](NOTES.md)
+Interactive version: https://eisman15.github.io/ADML/ · Study notes: [NOTES.md](NOTES.md)
 
 ## Contents
 
