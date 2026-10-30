@@ -200,3 +200,20 @@ kbd { border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; font-si
   .jump .grid button { height: 36px; }
   .desk-only { display: inline; }
 }
+
+/* Password gate */
+.gate { display: none; }
+html.locked .gate { display: grid; place-items: center; min-height: 100vh; min-height: 100dvh; padding: 16px; }
+html.locked .top, html.locked main, html.locked .foot { display: none; }
+.gate-box {
+  width: 100%; max-width: 360px; display: grid; gap: 12px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 20px;
+}
+.gate-box h1 { margin: 0; font-size: 1.2rem; }
+.gate-box .sub { margin: 0; }
+.gate-box input {
+  font: inherit; font-size: 1rem; min-height: 46px; padding: 10px 12px; width: 100%;
+  border: 1.5px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--text);
+}
+.gate-box input:focus { outline: none; border-color: var(--accent); }
+.gate-err { margin: 0; color: var(--bad); font-size: .88rem; }

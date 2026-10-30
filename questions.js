@@ -1,4 +1,4 @@
-// IFN680 exam practice question bank.
+// ADML exam practice question bank.
 // w = week, t = topic, q = question, o = options, a = index of correct option,
 // e = explanation, src = origin (omitted = generated from the lecture slides),
 // fixed = keep option order (for "A and C" style answers).

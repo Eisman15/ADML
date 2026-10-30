@@ -1,4 +1,4 @@
-# IFN680 Study Notes
+# ADML Study Notes
 
 One chapter per week: key topics, formulas and worked computations.
 

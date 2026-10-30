@@ -1,6 +1,6 @@
-# IFN680 Exam Practice
+# ADML Exam Practice
 
-Multiple choice practice site for IFN680 Advanced Machine Learning, covering lectures 1–12.
+Multiple choice practice site for ADML (Advanced Machine Learning), covering lectures 1–12.
 
 - **Week 12 Mock Quiz**: the practice exam and Week 12 mock quiz questions, plus extra questions in the same style.
 - **Practice by Week**: filter by week (1–12) and order questions by week or randomly. Each answer is checked immediately with an explanation.
